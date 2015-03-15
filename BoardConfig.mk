@@ -22,7 +22,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user
 TARGET_KERNEL_CONFIG := cyanogenmod_find7_defconfig
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find7-common/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find7/bluetooth
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true

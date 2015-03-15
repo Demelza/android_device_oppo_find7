@@ -38,7 +38,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13747929088 # 13747945472 - 16384 for cryp
 #BOARD_USERDATAIMAGE_PARTITION_SIZE := 3221225472
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/oppo/find7-common/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/oppo/find7/rootdir/etc/fstab.qcom
 
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 

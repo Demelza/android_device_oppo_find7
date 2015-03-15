@@ -17,12 +17,27 @@
 # Inherit from msm8974-common
 -include device/oppo/msm8974-common/BoardConfigCommon.mk
 
+# Disable periodic battery polling
+HEALTHD_CHATTY_MODE := false
+
+# Compiler flags
+TARGET_GCC_VERSION_EXP := 4.8
+TARGET_USE_PIPE := true
+USE_O3_OPTIMIZATIONS := true
+SUPPRES_UNUSED_WARNING := true
+KRAIT_TUNINGS := true
+ENABLE_GCCONLY := true
+GRAPHITE_OPTS := true
+STRICT_ALIASING := true
+BOOT_ZIP_OUT_FILE := SlimKernel-$(TARGET_DEVICE)-$(PLATFORM_VERSION)-$(shell date +"%Y%m%d")
+
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
-TARGET_KERNEL_CONFIG := cyanogenmod_find7_defconfig
+TARGET_KERNEL_CONFIG := slim_find7_defconfig
+ENABLE_GRAPHITE := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find7-common/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find7/bluetooth
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
@@ -41,6 +56,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13747929088 # 13747945472 - 16384 for cryp
 TARGET_RECOVERY_FSTAB := device/oppo/find7/rootdir/etc/fstab.qcom
 
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
+AUDIO_FEATURE_ENABLED_LOW_LATENCY_CAPTURE := true
 
 # Inherit from the proprietary version
 -include vendor/oppo/find7/BoardConfigVendor.mk

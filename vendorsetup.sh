@@ -1,2 +1,2 @@
-add_lunch_combo cm_find7-userdebug
-add_lunch_combo cm_find7-eng
+add_lunch_combo bliss_find7-userdebug
+add_lunch_combo bliss_find7-eng

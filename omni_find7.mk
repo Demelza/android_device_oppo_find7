@@ -26,3 +26,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="msm8974-user 4.3 JLS36C eng.root.20140510.152835 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
+
+# Inherit from proprietary blobs
+$(call inherit-product-if-exists, vendor/oppo/find7a/find7a-vendor.mk)

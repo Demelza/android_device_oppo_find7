@@ -29,4 +29,10 @@
     "target_path": "kernel/oneplus/msm8974",
     "revision": "android-5.1"
   }
+  {
+    "remote": "DonkeyCoyote",
+    "repository": "proprietary_vendor_oppo",
+    "target_path": "vendor/oppo",
+    "revision": "android-5.0"
+  }
 ]

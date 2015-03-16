@@ -39,6 +39,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    libinit_find7 \
     fstab.qcom \
     init.qcom.rc \
     init.qcom.usb.rc

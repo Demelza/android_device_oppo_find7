@@ -1,2 +1,2 @@
-add_lunch_combo omni_find7-userdebug
-add_lunch_combo omni_find7-eng
+add_lunch_combo eos_find7-userdebug
+add_lunch_combo eos_find7-eng

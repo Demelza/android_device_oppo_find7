@@ -1,12 +1,12 @@
 $(call inherit-product, device/oppo/find7/full_find7.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/omni/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/eos/config/nfc_enhanced.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/omni/config/common_full_phone.mk)
+$(call inherit-product, vendor/eos/config/common_full_phone.mk)
 
-PRODUCT_NAME := omni_find7
+PRODUCT_NAME := eos_find7
 PRODUCT_DEVICE := find7
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
